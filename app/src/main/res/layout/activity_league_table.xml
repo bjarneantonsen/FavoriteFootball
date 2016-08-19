@@ -15,10 +15,22 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <FrameLayout
-        android:id="@+id/leaguetable_container"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/leaguetable_pager"
         android:layout_below="@id/leaguetable_toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </FrameLayout>
+
+        <android.support.v4.view.PagerTabStrip
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"/>
+    </android.support.v4.view.ViewPager>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/leaguetable_container"-->
+        <!--android:layout_below="@id/leaguetable_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</FrameLayout>-->
 </RelativeLayout>
